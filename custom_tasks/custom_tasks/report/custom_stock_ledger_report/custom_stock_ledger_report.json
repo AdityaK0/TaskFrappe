@@ -1,0 +1,29 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-12-20 15:53:32.797195",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-12-20 15:58:54.733389",
+ "modified_by": "Administrator",
+ "module": "Custom Tasks",
+ "name": "Custom Stock Ledger Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Stock Ledger Entry",
+ "report_name": "Custom Stock Ledger Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Accounts Manager"
+  }
+ ]
+}

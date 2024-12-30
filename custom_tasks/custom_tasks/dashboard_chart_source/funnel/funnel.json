@@ -1,0 +1,13 @@
+{
+ "creation": "2024-12-30 00:42:13.526283",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2024-12-30 00:42:13.526283",
+ "modified_by": "Administrator",
+ "module": "Custom Tasks",
+ "name": "Funnel",
+ "owner": "Administrator",
+ "source_name": "Funnel",
+ "timeseries": 0
+}

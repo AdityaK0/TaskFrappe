@@ -1,0 +1,13 @@
+{
+ "creation": "2024-12-30 00:06:28.196801",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2024-12-30 00:06:28.196801",
+ "modified_by": "Administrator",
+ "module": "Custom Tasks",
+ "name": "Purchase Funnel",
+ "owner": "Administrator",
+ "source_name": "Purchase Funnel",
+ "timeseries": 0
+}
