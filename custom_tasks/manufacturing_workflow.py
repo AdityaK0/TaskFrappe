@@ -10,7 +10,7 @@ def execute():
 def create_manufacturing_workflows():
     """Create workflows for Work Order and Job Card"""
     
-    # Work Order Workflow States
+  
     work_order_states = [
         {
             'state': 'Draft',
@@ -44,7 +44,7 @@ def create_manufacturing_workflows():
         }
     ]
 
-    # Work Order Transitions
+
     work_order_transitions = [
         {
             'state': 'Draft',
@@ -85,7 +85,7 @@ def create_manufacturing_workflows():
 
     create_workflow('Work Order Process', 'Work Order', work_order_states, work_order_transitions)
 
-    # Job Card States
+
     job_card_states = [
         {
             'state': 'Draft',
@@ -109,7 +109,7 @@ def create_manufacturing_workflows():
         }
     ]
 
-    # Job Card Transitions
+
     job_card_transitions = [
         {
             'state': 'Draft',
@@ -154,7 +154,7 @@ def create_workflow(workflow_name, doc_type, states, transitions):
                 state_doc.insert(ignore_permissions=True)
             states_list.append(state_doc.name)
 
-        # Create workflow actions
+      
         actions_list = []
         for transition in transitions:
             action_doc = frappe.new_doc('Workflow Action Master')
@@ -163,14 +163,13 @@ def create_workflow(workflow_name, doc_type, states, transitions):
                 action_doc.insert(ignore_permissions=True)
             actions_list.append(action_doc.name)
 
-        # Create new workflow
         workflow = frappe.new_doc('Workflow')
         workflow.workflow_name = workflow_name
         workflow.document_type = doc_type
         workflow.is_active = 1
         workflow.send_email_alert = 1
 
-        # Add states to workflow
+
         for state in states:
             workflow.append('states', {
                 'state': state['state'],
@@ -178,7 +177,6 @@ def create_workflow(workflow_name, doc_type, states, transitions):
                 'allow_edit': state['allow_edit']
             })
 
-        # Add transitions to workflow
         for transition in transitions:
             workflow.append('transitions', {
                 'state': transition['state'],
