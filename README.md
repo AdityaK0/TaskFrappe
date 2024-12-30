@@ -127,7 +127,8 @@ The Work Order is marked as Completed after a successful quality check.
 
 # Task 4: Purchase Funnel
 
-in this task i have used a custom api which give the purchase reletaed data of the suppier and using the script i create the charts 
+in this task i have used a custom api which give the purchase reletaed data of the suppier and using the script i create the charts but as previously i havent worked on this charts so it gave 
+some errors 
 
 
       
